@@ -1,0 +1,33 @@
+{
+	"title": {
+		"xpath": "/div/hgroup/h1/b/text()"
+	},
+	"author": {
+		"xpath": "string(//div/hgroup/p[@class=\"author\"])"
+	},
+	"content_str":"sample",
+	"content": {
+		"xpath": "//section[@class=\"body headers topic-content\"]",
+		"absrtact": {
+			"xpath": "string(div[@class='body topic-content']/section[@class='header  FHead']/div"
+		},
+		"section": {
+			"xpath": "//section[@class='header  FHead']",
+			"head": {
+				"xpath": "string(//header/h2)"
+			},
+			"subabstract": {
+				"xpath": "string(//div/div)"
+			},
+			"subsection": {
+				"xpath": "string(//section(@class='header GHead'))",
+				"subhead": {
+					"xpath": "string(//header/h3/span)"
+				},
+				"subcontent": {
+					"xpath": "string(//section[@class='header  FHead'])"
+				}
+			}
+		}
+	}
+}
